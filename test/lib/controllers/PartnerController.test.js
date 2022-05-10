@@ -11,5 +11,10 @@ describe("Test para PartnerController", () => {
         const Partners = PartnerController.getPartnersUpto500Credits();
         expect(Partners.length).toBe(27);
     })
+
+    test("3) obten lista de todos los Partners", () => {
+        const Partners = PartnerController.getPartnersList();
+        expect(Partners.length).toBe(51);
+    })
 })
 
