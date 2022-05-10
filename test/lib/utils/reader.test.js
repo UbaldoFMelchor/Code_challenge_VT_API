@@ -1,16 +1,9 @@
-const fs = require('fs');
+const Reader = require('./../../../lib/utils/Reader')
 
 describe("test para carpeta Reader", () => {
     test("1) Probar Reader de datos desde data VisualPartnersTest.json", () =>{
-        class Reader {
-            static readJsonFile(path) {
-                const rawdata = fs.readFileSync(path);
-                return JSON.parse(rawdata);
-            }
-        
-        }
-
-        const reader = Reader.readJsonFile('./test/data/visualPartnersTest.json')
+       
+        const reader = Reader.readJsonFile('visualPartnersTest.json')
         expect(reader).toBe(reader)
     })
 })
