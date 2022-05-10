@@ -4,11 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "linter": "eslint .",
+    "linter-fix": "eslint . --fix",
+    "server": "node ./lib/server.js"
   },
   "author": "UbaldoFMelchor",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.18.1",
     "jest": "^28.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0"
   }
 }
