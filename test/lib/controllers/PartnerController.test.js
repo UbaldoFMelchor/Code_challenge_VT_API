@@ -6,5 +6,10 @@ describe("Test para PartnerController", () => {
         expect(Partners.length).toBe(29);
 
     })
+
+    test("2) obten lista de Partners con creditos mayores a 500", () => {
+        const Partners = PartnerController.getPartnersUpto500Credits();
+        expect(Partners.length).toBe(27);
+    })
 })
 
